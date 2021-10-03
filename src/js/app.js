@@ -5,6 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     var product = document.querySelectorAll('.product');
     product.forEach(element => {
-        element.setAttribute("data-price", "price");
+        let text = document.querySelector('.price');
+        element.setAttribute("data-price", text.innerText);
     });
 });
