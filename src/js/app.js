@@ -5,7 +5,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     var product = document.querySelectorAll('.product');
     product.forEach(element => {
-        element.classList.add("data-price");
+        element.setAttribute("data-price", "price");
     });
-    //product.classList.add("data-price");
 });
